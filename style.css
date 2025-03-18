@@ -1,0 +1,20 @@
+body {
+	margin: 3rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 3rem;
+}
+
+#me {
+	height: calc(100vh - 6rem);
+	display: block;
+}
+
+div.panel {
+	outline: 0.25rem solid #ff88cd;
+	padding: 1rem;
+	border-radius: 0.3rem;
+	height: fit-content;
+	max-width: 25rem;
+}
