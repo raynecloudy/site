@@ -70,7 +70,7 @@ a {
 }
 
 :focus-visible {
-	outline: 3px solid var(--main);
+	outline: 0.2rem solid var(--main);
 	border-radius: 0.1rem;
 	border-color: transparent;
 }
