@@ -1,0 +1,49 @@
+@import url(https://fonts.googleapis.com/css2?family=VT323&display=swap);
+
+@font-face {
+    font-family: "light";
+    src: url(/Basiic\ Sans\ 12pt.ttf);
+}
+
+@font-face {
+	font-family: "regular";
+	src: url(/Basiic\ Sans\ 18pt.ttf);
+}
+
+@font-face {
+	font-family: "bold";
+	src: url(/Basiic\ Style\ Sans.ttf);
+}
+
+:root {
+	--content-width: 600px;
+	color-scheme: dark;
+}
+
+body {
+	display: flex;
+	margin: 10px;
+	justify-content: center;
+	font-family: "regular", "VT323";
+	background-color: #000000;
+	scroll-behavior: smooth;
+	color: #ffffff;
+	line-height: 1.2rem;
+	font-size: 1rem;
+	image-rendering: pixelated;
+}
+
+content {
+	width: var(--content-width);
+	max-width: calc(100vw - 20px);
+	display: block;
+}
+
+* {
+	font-weight: normal;
+}
+
+::selection {
+	background-color: #ffffff;
+	color: #000000;
+}
