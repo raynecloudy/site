@@ -1,0 +1,26 @@
+body {
+	display: flex;
+	margin: 10px;
+	justify-content: center;
+	background-color: #000000;
+	scroll-behavior: smooth;
+	color: #ffffff;
+	line-height: 1.2rem;
+	font-size: 1rem;
+	image-rendering: pixelated;
+}
+
+content {
+	width: var(--content-width);
+	max-width: calc(100vw - 20px);
+	display: block;
+}
+
+* {
+	font-weight: normal;
+}
+
+::selection {
+	background-color: #ffffff;
+	color: #000000;
+}
