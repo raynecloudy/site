@@ -13,7 +13,7 @@ document.addEventListener("keydown", (e) => {
 });
 
 document.addEventListener("keyup", (e) => {
-	if (e.key = "l" && !e.altKey && !e.shiftKey && !e.ctrlKey) {
+	if (e.key === "l" && !e.altKey && !e.shiftKey && !e.ctrlKey) {
 		holding = false;
 	}
 });
