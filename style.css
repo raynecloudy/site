@@ -1,7 +1,17 @@
 :root {
+	--bg: #ffffff;
 	--main: #ff88cd;
-	--text: #3e366b;
 	--link: #af4c86;
+	--text: #3e366b;
+	color-scheme: light;
+}
+
+:root:has(body.dark) {
+	--bg: #0e0c14;
+	--main: #ff88cd;
+	--link: var(--main);
+	--text: #ffffff;
+	color-scheme: dark;
 }
 
 body {
@@ -10,6 +20,7 @@ body {
 	justify-content: center;
 	align-items: center;
 	gap: 3rem;
+	background: var(--bg);
 	color: var(--text);
 }
 
@@ -48,4 +59,10 @@ a {
 .rainbow_donator {
 	animation: rainbow_donator 1s linear infinite forwards;
 	color: #ff0000;
+}
+
+#light_switch {
+	position: fixed;
+	top: 0;
+	left: 0;
 }
