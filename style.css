@@ -68,3 +68,8 @@ a {
 	top: 0;
 	left: 0;
 }
+
+input[type="search"] {
+	border: 1px solid var(--main);
+	border-radius: 0.2rem;
+}

@@ -5,7 +5,7 @@ if (localStorage.getItem("dark") === "true") {
 let holding = false;
 
 document.addEventListener("keydown", (e) => {
-	if (e.key === "l" && !e.altKey && !e.shiftKey && !e.ctrlKey && holding === false) {
+	if (e.key === "l" && !e.altKey && !e.shiftKey && !e.ctrlKey && holding === false && document.activeElement.tagName !== "INPUT") {
 		holding = true;
 		document.body.classList.toggle("dark");
 		localStorage.setItem("dark", document.body.classList.contains("dark"));
@@ -13,7 +13,7 @@ document.addEventListener("keydown", (e) => {
 });
 
 document.addEventListener("keyup", (e) => {
-	if (e.key === "l" && !e.altKey && !e.shiftKey && !e.ctrlKey) {
+	if (e.key === "l" && !e.altKey && !e.shiftKey && !e.ctrlKey && document.activeElement.tagName !== "INPUT") {
 		holding = false;
 	}
 });
