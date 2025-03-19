@@ -69,7 +69,16 @@ a {
 	left: 0;
 }
 
-input[type="search"] {
-	border: 1px solid var(--main);
-	border-radius: 0.2rem;
+:focus-visible {
+	outline: 3px solid var(--main);
+	border-radius: 0.1rem;
+	border-color: transparent;
+}
+
+.skip_to_content:not(:focus) {
+	display: block;
+	width: 0;
+	height: 0;
+	overflow: hidden;
+	line-height: 0;
 }
