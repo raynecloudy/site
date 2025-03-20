@@ -82,3 +82,8 @@ a {
 	overflow: hidden;
 	line-height: 0;
 }
+
+hr {
+	border: 0.15rem solid var(--main);
+	border-radius: 0.3rem;
+}
