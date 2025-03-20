@@ -12,7 +12,7 @@ fetch("https://lastfm-last-played.biancarosa.com.br/raynecloudy/latest-song").th
 document.querySelector("#search").addEventListener("keyup", (e) => {
 	if (e.key.length === 1 || e.key === "Backspace") {
 		Array.from(document.querySelectorAll("#links > li")).forEach(element => {
-			if (element.querySelector("a").innerText.match(document.querySelector("#search").value)) {
+			if (element.querySelector("a").innerText.toLowerCase().match(document.querySelector("#search").value.toLowerCase())) {
 				element.style.pointerEvents = "initial";
 				element.style.opacity = "1";
 				element.querySelector("a").tabIndex = "0";
