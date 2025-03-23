@@ -1,0 +1,29 @@
+@font-face {
+	font-family: "shell";
+	src: url("/shell.ttf");
+}
+
+body {
+	font-family: "shell";
+	margin: 2.5rem;
+	background-color: #000000;
+	color: #ffffff;
+	line-height: 1rem;
+}
+
+.up {
+	color: #44f561;
+}
+
+.down {
+	color: #ff5555;
+}
+
+.thinking {
+	color: #ffcb3b;
+}
+
+::selection {
+	background-color: #ffffff;
+	color: #000000;
+}
