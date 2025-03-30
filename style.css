@@ -87,3 +87,17 @@ hr {
 	border: 0.15rem solid var(--main);
 	border-radius: 0.3rem;
 }
+
+#s0g-webring {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+}
+
+#s0g-webring img {
+  width: 7rem;
+}
+
+body.dark #s0g-webring img {
+  filter: invert();
+}
