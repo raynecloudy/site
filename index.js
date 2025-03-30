@@ -1,5 +1,5 @@
 if (!localStorage.getItem("dark")) {
-	document.querySelector(".panel").innerHTML += "<p>press 'l' to toggle dark mode!!</p>";
+	document.querySelector(".panel").innerHTML += "<p id='dark-mode-control-indicator'><span class='desktop'>press 'l' to toggle dark mode!!</span>";
 }
 
 fetch("https://lastfm-last-played.biancarosa.com.br/raynecloudy/latest-song").then(res => res.json().then(json => {

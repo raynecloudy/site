@@ -29,6 +29,14 @@ body {
   body {
     flex-direction: column;
   }
+
+  #mobile-dark-mode-toggle {
+    display: block !important;
+  }
+
+  #dark-mode-control-indicator {
+    display: none;
+  }
 }
 
 #me {
@@ -106,4 +114,8 @@ hr {
 
 body.dark #s0g-webring img {
   filter: invert();
+}
+
+#mobile-dark-mode-toggle {
+  display: none;
 }
