@@ -25,6 +25,12 @@ body {
 	min-height: calc(100vh - 6rem);
 }
 
+@media (max-width: 60rem) {
+  body {
+    flex-direction: column;
+  }
+}
+
 #me {
 	height: calc(100vh - 6rem);
 	display: block;
