@@ -21,6 +21,7 @@ const check_status = (id) => {
 
 check_status("ai");
 check_status("shirley");
+check_status("stuff");
 
 function sleep(ms) {
   return new Promise((resolve) => {
