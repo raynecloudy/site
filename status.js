@@ -1,6 +1,6 @@
 const addresses = {
 	"ai": "https://ai.raynec.dev/",
-	"shirley": "https://shirley.raynec.dev/"
+	"shirley": "https://shirley.raynec.dev/",
 	"stuff": "https://stuff.raynec.dev/"
 }
 
