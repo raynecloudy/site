@@ -1,6 +1,7 @@
 const addresses = {
 	"ai": "https://ai.raynec.dev/",
 	"shirley": "https://shirley.raynec.dev/"
+	"stuff": "https://stuff.raynec.dev/"
 }
 
 const check_status = (id) => {
