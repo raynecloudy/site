@@ -162,6 +162,7 @@ div.content-warning {
 	.show
 ):not(:is(img)) {
 	filter: blur(0.5rem);
+	user-select: none;
 }
 
 .restricted:not(:is(img)) {
