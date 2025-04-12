@@ -5,6 +5,10 @@
 	--restricted: #ffd6dd;
 	--restricted-img: #ff9ba8;
 	--text: #3e366b;
+
+	--cursor-default: url("/media/cursor.png") 0 0, default;
+	--cursor-interact: url("/media/cursor_interact.png") 0 0, pointer;
+
 	color-scheme: light;
 }
 
@@ -26,6 +30,7 @@ body {
 	background: var(--bg);
 	color: var(--text);
 	min-height: calc(100vh - 6rem);
+	cursor: var(--cursor-default);
 }
 
 @media (max-width: 60rem) {
@@ -179,4 +184,13 @@ img.restricted:not(
 .img-restricted {
 	overflow: hidden;
 	outline: 0.3rem solid var(--restricted-img);
+}
+
+a,
+input[type="search"] {
+	cursor: var(--cursor-interact);
+}
+
+label {
+	cursor: inherit;
 }
