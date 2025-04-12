@@ -2,6 +2,8 @@
 	--bg: linear-gradient(#fffbef, #ffeaf5);
 	--main: #b8a5fd;
 	--link: #7957ff;
+	--restricted: #ffd6dd;
+	--restricted-img: #ff9ba8;
 	--text: #3e366b;
 	color-scheme: light;
 }
@@ -10,6 +12,7 @@
 	--bg: #0e0c14;
 	--main: #b8a5fd;
 	--link: var(--main);
+	--restricted: #64444a;
 	--text: #ffffff;
 	color-scheme: dark;
 }
@@ -54,8 +57,10 @@ div.panel {
 }
 
 div.panel > img,
-div.panel > p > img {
+div.panel > p > img,
+div.panel > .img-restricted > img {
 	max-width: 100%;
+	display: block;
 }
 
 ::selection {
@@ -150,4 +155,27 @@ div.content-warning {
 	background-color: #5c551d;
 	padding: 1rem;
 	outline: 0.3rem solid #ffed48;
+}
+
+.restricted:not(
+	:hover,
+	.show
+):not(:is(img)) {
+	filter: blur(0.5rem);
+}
+
+.restricted:not(:is(img)) {
+	background-color: var(--restricted);
+}
+
+img.restricted:not(
+	:hover,
+	.show
+) {
+	filter: blur(4rem);
+}
+
+.img-restricted {
+	overflow: hidden;
+	outline: 0.3rem solid var(--restricted-img);
 }
