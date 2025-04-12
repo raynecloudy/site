@@ -162,26 +162,20 @@ div.content-warning {
 	outline: 0.3rem solid #ffed48;
 }
 
-.restricted:not(
-	:hover,
-	.show
-):not(:is(img)) {
+body:not(.show) .restricted:not(:hover):not(:is(img)) {
 	filter: blur(0.5rem);
 	user-select: none;
 }
 
-.restricted:not(:is(img)) {
+body:not(.show) .restricted:not(:is(img)) {
 	background-color: var(--restricted);
 }
 
-img.restricted:not(
-	:hover,
-	.show
-) {
+body:not(.show) img.restricted:not(:hover) {
 	filter: blur(4rem);
 }
 
-.img-restricted {
+body:not(.show) .img-restricted {
 	overflow: hidden;
 	outline: 0.3rem solid var(--restricted-img);
 }
@@ -193,4 +187,16 @@ input[type="search"] {
 
 label {
 	cursor: inherit;
+}
+
+.cw-indicator {
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-color: var(--restricted);
+	padding: 1rem;
+}
+
+body:not(.show) .cw-indicator {
+	display: none;
 }

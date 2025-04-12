@@ -10,9 +10,7 @@ document.addEventListener("keydown", (e) => {
 		document.body.classList.toggle("dark");
 		localStorage.setItem("dark", document.body.classList.contains("dark"));
 	} else if (e.key === "s" && !e.altKey && !e.shiftKey && !e.ctrlKey) {
-		Array.from(document.getElementsByClassName("restricted")).forEach(element => {
-			element.classList.toggle("show");
-		});
+		document.body.classList.toggle("show");
 	}
 });
 
