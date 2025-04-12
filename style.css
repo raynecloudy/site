@@ -49,8 +49,13 @@ div.panel {
 	padding: 1rem;
 	border-radius: 0.3rem;
 	height: fit-content;
-	max-width: 25rem;
+	max-width: 30rem;
 	box-shadow: -0.6rem 0.6rem 0 #3e366b22;
+}
+
+div.panel > img,
+div.panel > p > img {
+	max-width: 100%;
 }
 
 ::selection {
@@ -118,4 +123,31 @@ body.dark #s0g-webring img {
 
 #mobile-dark-mode-toggle {
   display: none;
+}
+
+.char-preview {
+	padding: 1rem;
+	outline: 0.3rem solid var(--main);
+	border-radius: 0.15rem;
+	display: block;
+	color: inherit;
+	text-decoration: inherit;
+	margin: 1rem 0;
+	width: calc(100% - 2rem);
+}
+
+.char-preview:focus-visible {
+	outline-width: 0.5rem;
+}
+
+.char-preview img {
+	width: 100%;
+	aspect-ratio: 1 / 1;
+}
+
+div.content-warning {
+	color: #ffed48;
+	background-color: #5c551d;
+	padding: 1rem;
+	outline: 0.3rem solid #ffed48;
 }
