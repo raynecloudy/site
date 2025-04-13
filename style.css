@@ -163,11 +163,11 @@ div.content-warning {
 }
 
 body:not(.show) .restricted:not(:hover):not(:is(img)) {
-	filter: blur(0.5rem);
+	filter: blur(0.3rem);
 	user-select: none;
 }
 
-body:not(.show) .restricted:not(:is(img)) {
+body:not(.show) .restricted:not(:is(img)):hover {
 	background-color: var(--restricted);
 }
 
