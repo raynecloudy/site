@@ -3,7 +3,7 @@
 	--main: #b8a5fd;
 	--link: #7957ff;
 	--restricted: #ffd6dd;
-	--restricted-img: #ff9ba8;
+	--restricted-bold: #ff9ba8;
 	--text: #3e366b;
 
 	--cursor-default: url("/media/cursor.png") 0 0, default;
@@ -163,11 +163,23 @@ div.content-warning {
 }
 
 body:not(.show) .restricted:not(:hover):not(:is(img)) {
-	filter: blur(0.3rem);
 	user-select: none;
+	color: transparent;
+}
+
+body:not(.show) .restricted:not(:hover):not(:is(img)) a {
+	color: transparent;
 }
 
 body:not(.show) .restricted:not(:is(img)):hover {
+	transition: 0.2s 0.5s;
+}
+
+body:not(.show) .restricted:not(:is(img)):hover a {
+	transition: 0.2s 0.5s;
+}
+
+body:not(.show) .restricted:not(:is(img)) {
 	background-color: var(--restricted);
 }
 
@@ -177,7 +189,7 @@ body:not(.show) img.restricted:not(:hover) {
 
 body:not(.show) .img-restricted {
 	overflow: hidden;
-	outline: 0.3rem solid var(--restricted-img);
+	outline: 0.3rem solid var(--restricted-bold);
 }
 
 a,
