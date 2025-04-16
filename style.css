@@ -88,7 +88,8 @@ a {
 	left: 0;
 }
 
-:focus-visible {
+:focus-visible,
+.img-restricted:has(:focus-visible) {
 	outline: 0.2rem solid var(--main);
 	border-radius: 0.1rem;
 	border-color: transparent;
@@ -152,33 +153,28 @@ div.content-warning {
 	outline: 0.3rem solid #ffed48;
 }
 
-body:not(.show) .restricted:not(:hover):not(:is(img)) {
+.restricted:not(:hover, .show:focus-visible):not(:is(img)) {
 	user-select: none;
 	color: transparent;
 }
 
-body:not(.show) .restricted:not(:hover):not(:is(img)) a {
+.restricted:not(:hover, .show:focus-visible):not(:is(img)) a {
 	color: transparent;
 }
 
-body:not(.show) .restricted:not(:is(img)):hover {
-	transition: 0.2s 0.5s;
-}
-
-body:not(.show) .restricted:not(:is(img)):hover a {
-	transition: 0.2s 0.5s;
-}
-
-body:not(.show) .restricted:not(:is(img)) {
+.restricted:not(:is(img)) {
 	background-color: var(--restricted);
 }
 
-body:not(.show) img.restricted:not(:hover) {
+img.restricted:not(:hover, .show) {
 	filter: blur(4rem);
 }
 
-body:not(.show) .img-restricted {
-	overflow: hidden;
+.img-restricted {
+  overflow: hidden;
+}
+
+.img-restricted:not(:has(:focus-visible)) {
 	outline: 0.3rem solid var(--restricted-bold);
 }
 
@@ -189,18 +185,6 @@ input[type="search"] {
 
 label {
 	cursor: inherit;
-}
-
-.cw-indicator {
-	position: fixed;
-	top: 0;
-	left: 0;
-	background-color: var(--restricted);
-	padding: 1rem;
-}
-
-body:not(.show) .cw-indicator {
-	display: none;
 }
 
 @media (max-width: 75rem) {

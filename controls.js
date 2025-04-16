@@ -9,8 +9,6 @@ document.addEventListener("keydown", (e) => {
 		holding_l = true;
 		document.body.classList.toggle("dark");
 		localStorage.setItem("dark", document.body.classList.contains("dark"));
-	} else if (e.key === "s" && !e.altKey && !e.shiftKey && !e.ctrlKey) {
-		document.body.classList.toggle("show");
 	}
 });
 
@@ -25,4 +23,16 @@ document.addEventListener("keyup", (e) => {
 	if (e.key === "l" && !e.altKey && !e.shiftKey && !e.ctrlKey && document.activeElement.tagName !== "INPUT") {
 		holding_l = false;
 	}
+});
+
+Array.from(document.getElementsByClassName("restricted")).forEach((element) => {
+  element.tabIndex = 0;
+  element.addEventListener("keydown", (e) => {
+    if (e.key === "s" && !e.altKey && !e.shiftKey && !e.ctrlKey) {
+      element.classList.toggle("show");
+    }
+  });
+  element.addEventListener("blur", () => {
+    element.classList.remove("show");
+  });
 });
