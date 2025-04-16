@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Mukta+Mahee:wght@200;300;400;500;600;700;800&display=swap");
+
 :root {
 	--bg: linear-gradient(#fffbef, #ffeaf5);
 	--main: #b8a5fd;
@@ -31,6 +33,8 @@ body {
 	background: var(--bg);
 	color: var(--text);
 	min-height: calc(100vh - 6rem);
+  font-family: "Mukta Mahee";
+  line-height: 1.55rem;
 }
 
 #me {
