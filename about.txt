@@ -1,0 +1,45 @@
+                                          ┏━ lots-o-nekos - npm ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+              +                           ┃   ❤    Pro    Teams    Pricing    Documentation
+                                        + ┃─────────────────────────────────────────────────────────────────────────────────
+                                          ┃   npm   🔍 Search packages                                          Search    Si
+      +                                   ┃─────────────────────────────────────────────────────────────────────────────────
+                              +           ┃
+                                          ┃  lots-o-nekos  [TS]
+         ┏━ rayne ━━━━━━━━━━━━━━━━━━━━━━━━┻━━━━━━━━━━━━━━ 🗕 🗖 ✖ ━┓
+         ┃                                                         ┃Code (Beta)      ◼ 0 Dependencies      ◼ 0 Dependents
++        ┃ hi!! my name's rayne! i'm a fullstack web developer     ┃────────────────────────────────────────────────────────
+         ┃ with a huge passion for computer science! i've been     ┃
+         ┃ programming for upwards of 8 years now.                 ┃                                              Install
+         ┃                                                         ┃                                              ┌─────────
+         ┃ i love web development and working with computers in    ┃                                              │ > npm i
+         ┃ general, and i've made some noteworthy things in my     ┃                                              └─────────
+         ┃ time! i'll be showing you them throughout my bio >w<    ┃ the popular oneko.js script! featuring
+         ┃                                                         ┃ate control, and other fun stuff!             Repository
+     +   ┃ i hope you have a great day!                            ┃                                              ◆ github.c
+         ┃                                                         ┃
+         ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━┛───────────────────────────────────────       Homepage
+                            +             ┃   Welcome to lots-o-nekos! This project is a Javascript library      🔗 github.c
+                                          ┃   building off of adryd325's oneko.js script. It features
+      +                                   ┃   customization capabilities such as speed, graphics, and more!       ⤓ Weekly D
+                                          ┃
+                                          ┃   Contributing                                                        91 _______
+      +                                   ┃   ─────────────────────────────────────────────────────────────
+                                        + ┃   This project takes contributions from any and all! New              Version
+                          +                                   ays welcome, and there could always be more         2.2.2
+ ━┓                                         ┃                 o choose from... if you're a pixel artist you
+  ┃  ┏━━━┓ ━╋━ ┏━━     ┏━━━┓    ┏━━━┓ ┏━━━┓ ┃  ┃ ┏━━━┓ ┏━━    creating a custom Oneko graphic for                 Unpacked S
+  ┃  ┃   ┃  ┃  ┗━━┓ ━━ ┃   ┃ ━━ ┃   ┃ ┣━━━┛ ┣━━┫ ┃   ┃ ┗━━┓   om/raynecloudy/oneko_db/ :3                         21.4 kB
+ ━┻━ ┗━━━┛  ┗━  ━━┛    ┗━━━┛    ┃   ┃ ┗━━━━ ┃  ┃ ┗━━━┛  ━━┛   
+                                                                                                                  Issues
+    lots-o-nekos is a javascript library and an npm package   ─────────────────────────────────────────────       0
+  with the purpose of programming silly little cats on your   ssible methods of installation.
+  web pages! featuring an easy-to-use Oneko class, full                                                           Last Publi
+  typescript support with jsdocs, and a whole lotta fun!                                                          13 hours a
+                                                              ─────────────────────────────────────────────
+  forked from the popular oneko.js script.                     import the lots-o-nekos package:                   Collaborat
+  https://github.com/adryd325/oneko.js/                       ───────────┐                                        ~raynec
+                                                              ts-o-nekos │
+                                          ┃   └──────────────────────────┘                                        ┌─────────
+                                          ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+to be continued!
